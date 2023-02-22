@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+body{
+    background-image: url(images/skynews-leonid-meteor_5969686.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .content{
+    font-size: 2.3vw;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .total .owo p{
+    width: 80%;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .total{
+    font-size: 2.3vw;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.content {
+  position: relative;
+  height: 400px;
+}
+
+.content h2 {
+  color: rgb(255, 255, 255);
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+}
+
+.content h2:nth-child(2) {
+  color: #ffffff;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.total{
+  margin-top: 450px;
+  position: absolute;
+  width: 99%; 
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+.total .owo{
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.total .owo p{
+ margin-top: 10px;
+ text-decoration: underline;
+ text-underline-offset: 15px;
+}
+
+.total .instagram{
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.total .spotify{
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.total .discord{
+ width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.total .discord a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Russo One', sans-serif;
+  font-size: 25px;
+  position: relative;
+  margin: auto;
+  list-style-type: none;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+
+.discord ul{
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.owo p{
+  color: white;
+  margin-top: 5px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 25px;
+}
+
+.total .instagram a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Russo One', sans-serif;
+  font-size: 25px;
+  position: relative;
+  margin: auto;
+  list-style-type: none;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+ }
+
+ .instagram ul{
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.total .spotify a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Russo One', sans-serif;
+  font-size: 25px;
+  position: relative;
+  margin: auto;
+  list-style-type: none;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+ }
+
+ .spotify ul{
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+#bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
